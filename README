@@ -1,5 +1,31 @@
 Ext.ux.toolbar.PagingOptions() is a class intended for use with ExtJS 4.x.
 
+Usage:
+==========
+
+Ext.create('Ext.ux.toolbar.PagingOptions', {
+    store       : store,
+    displayInfo : true,
+    displayMsg  : 'Displaying topics {0} - {1} of {2}',
+    emptyMsg    : "No topics to display",
+    listeners   : {
+        pagesizeselect: function(size) {
+            alert(size);
+        }
+    }
+})  
+
+==========
+
+
 Configs:
-- forceSelection config (defaults to false)
-- pageSizeOptions config (JSON array of values)
+- forceSelection (defaults to false)
+- pageSizeOptions (JSON array of values)
+
+(Also accepts all configs from Ext.toolbar.Paging)
+
+
+Events:
+- pagesizeselect: Passed a single parameter, 'size'
+
+(Also fires all events from Ext.toolbar.Paging)
