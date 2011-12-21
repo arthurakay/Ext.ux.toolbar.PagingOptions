@@ -1,0 +1,5 @@
+Ext.ux.toolbar.PagingOptions() is a class intended for use with ExtJS 4.x.
+
+Configs:
+- forceSelection config (defaults to false)
+- pageSizeOptions config (JSON array of values)
