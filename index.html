@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <link href="../extjs-4.1.1/resources/css/ext-all.css" rel="stylesheet" type="text/css"/>
+    <script src="../extjs-4.1.1/ext-all.js" type="text/javascript"></script>
+    <script src="Ext.ux.toolbar.PagingOptions.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+    Ext.onReady(function () {
+        Ext.create('Ext.ux.toolbar.PagingOptions', {
+            store : new Ext.data.Store({
+                fields : ['foo', 'bar'],
+                data   : []
+            }),
+
+            displayInfo : true,
+            displayMsg  : 'Displaying topics {0} - {1} of {2}',
+            emptyMsg    : "No topics to display",
+
+            renderTo : Ext.getBody(),
+            width    : 500,
+
+            listeners : {
+                pagesizeselect : function (size) {
+                    alert(size);
+                }
+            }
+        })
+    });
+
+</script>
+</body>
+</html>

@@ -2,6 +2,7 @@
  * @class Ext.ux.toolbar.PagingOptions
  * @author Arthur Kay (http://www.akawebdesign.com)
  * @namespace Ext.ux.toolbar
+ * @version 1.0
  * @extends Ext.toolbar.Paging
  * @constructor
  * @param {object} configObj
